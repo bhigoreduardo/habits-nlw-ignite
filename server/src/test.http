@@ -6,3 +6,6 @@ Content-Type: application/json
   "title": "Correr 2km",
   "weekDays": [0, 6]
 }
+
+### GET /day?date=2023-03-25T00:00:00.000Z
+GET http://localhost:3333/day?date=2023-03-25T06:00:00.000Z
