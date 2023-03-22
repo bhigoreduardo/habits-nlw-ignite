@@ -1,0 +1,8 @@
+### POST /habits
+POST http://localhost:3333/habits
+Content-Type: application/json
+
+{
+  "title": "Correr 2km",
+  "weekDays": [0, 6]
+}
