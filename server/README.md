@@ -11,6 +11,7 @@
 - Git (`git -v`)
 - NodeJs (`node --version`/`npm --version`)
 - VS Code
+- Extensions: REST Client
 
 ## :fire: Run
 
@@ -21,7 +22,7 @@
 ## :baby: Created
 
 - Node Project: `npm init -y`
-- TypeScript Project: `npx tsc init`
+- TypeScript Project: `npx tsc --init`
 - Prisma SQLite Project: `npx prisma init --datasource-provider SQLite`
 - Migrations Scripts: `npx prisma migrate dev`
 - Generator ERD: `npx prisma generate`
@@ -67,7 +68,7 @@
     - id: string
     - date: date
 
-  - HabitDay:
+  - DayHabit:
     - id: string
     - habit_id: string
     - day_id: string
