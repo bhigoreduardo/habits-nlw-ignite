@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 
 import { Routes } from './src/routes'
 
@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Routes />
-      <StatusBar style="auto" />
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent={true} />
     </>
   );
 }
@@ -14,8 +14,12 @@ export default function App() {
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
-//     backgroundColor: '#000',
+//     backgroundColor: '#09090A',
 //     alignItems: 'center',
 //     justifyContent: 'center',
 //   },
+//   text: {
+//     color: '#fff',
+//     fontFamily: 'Inter_800ExtraBold',
+//   }
 // });
