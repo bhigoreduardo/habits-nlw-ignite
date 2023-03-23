@@ -28,7 +28,7 @@
 
 - Dependencies: `npm install @react-navigation/native @react-navigation/native-stack nativewind dayjs axios clsx`
 - Dev Dependencies: `npm install --save-dev tailwindcss react-native-svg-transformer`
-- Expo Manager Dependencies: `npx expo install react-native-screens react-native-safe-area-context expo-font @expo-google-fonts/inter react-native-svg  react-native-reanimated`
+- Expo Manager Dependencies: `npx expo install react-native-screens react-native-safe-area-context react-native-svg expo-font @expo-google-fonts/inter react-native-reanimated`
 
 ## :page_facing_up: Docs
 
