@@ -5,6 +5,7 @@
 ✅ TypeScript
 ✅ JavaScript
 ✅ SQL
+✅ Fastify
 
 ## :hammer: Tools
 
