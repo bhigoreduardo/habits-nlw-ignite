@@ -3,7 +3,9 @@ export declare global {
     interface RootParamList {
       home: undefined,
       new: undefined,
-      habit: undefined,
+      habit: {
+        date: string;
+      }
     }
   }
 }
