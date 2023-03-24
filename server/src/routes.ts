@@ -18,7 +18,7 @@ export async function appRoutes(app: FastifyInstance) {
     await prisma.habit.create({
       data: {
         title,
-        created_at : today,
+        created_at: today,
 
         weekDays: {
           create: weekDays.map(weekDay => {
@@ -115,5 +115,32 @@ export async function appRoutes(app: FastifyInstance) {
         },
       })
     }
+  })
+
+  app.get('/summary', async () => {
+    const summary = await prisma.$queryRaw`
+      SELECT
+        D.id,
+        D.date,
+        (
+          SELECT 
+            cast(count(*) as float)
+          FROM day_habits DH
+            WHERE DH.day_id = D.id
+        ) as completed,
+        (
+          SELECT
+            cast(count(*) as float)
+          FROM week_days WD
+          JOIN habits H
+            ON H.id = WD.habit_id
+          WHERE
+            WD.week_day = cast(strftime('%w', D.date/1000.0, 'unixepoch') as int)
+            AND H.created_at <= D.date
+        ) as amount
+        FROM days D
+    `
+
+    return summary
   })
 }

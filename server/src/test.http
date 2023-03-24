@@ -10,6 +10,8 @@ Content-Type: application/json
 ### GET /day?date=2023-03-25T00:00:00.000Z
 GET http://localhost:3333/day?date=2023-03-25T06:00:00.000Z
 
-
 ### PATCH /habits/1ad9df9f-9115-4cf4-a968-dfaf91369f74/toggle
 PATCH http://localhost:3333/habits/1ad9df9f-9115-4cf4-a968-dfaf91369f74/toggle
+
+### GET /summary
+GET http://localhost:3333/summary
