@@ -8,6 +8,7 @@ import {
 } from '@expo-google-fonts/inter'
 
 import { Routes } from './src/routes'
+import { Loading } from './src/components/Loading'
 
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -17,7 +18,7 @@ export default function App() {
     Inter_800ExtraBold,
   })
 
-  if (!fontLoaded) return
+  if (!fontLoaded) return <Loading />
 
   return (
     <>
