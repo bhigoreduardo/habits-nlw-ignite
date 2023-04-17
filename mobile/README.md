@@ -1,20 +1,5 @@
 # :computer: Mobile
 
-## :briefcase: Stacks
-
-✅ TypeScript
-✅ JavaScript
-✅ ReactNative
-
-## :hammer: Tools
-
-- Git (`git -v`)
-- NodeJs (`node --version`/`npm --version`)
-- VS Code
-- Expo CLI (`expo --version`)
-- Android Studio (`android-studio/bin/` `./studio.sh`)
-- Extensions: Tailwind CSS Intelisense
-
 ## :fire: Run
 
 - Dev Environment: `npx expo start` `npx expo start --clear`

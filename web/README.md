@@ -1,18 +1,5 @@
 # :desktop_computer: Server
 
-## :briefcase: Stacks
-
-✅ TypeScript
-✅ JavaScript
-✅ React
-
-## :hammer: Tools
-
-- Git (`git -v`)
-- NodeJs (`node --version`/`npm --version`)
-- VS Code
-- Extensions: Tailwind CSS Intelisense
-
 ## :fire: Run
 
 - Dev Environment: `npm run dev`
