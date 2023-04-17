@@ -1,0 +1,19 @@
+@server = http://localhost:3333
+
+### POST /habits
+POST {{ server }}/habits
+content-type: application/json
+
+{
+  "title": "Cardio",
+  "weekDays": [0, 1, 2, 3, 4, 5, 6]
+}
+
+### GET /day?date=2023-01-03T06:00:00.000Z
+GET {{ server }}/day?date=2023-03-17T06:00:00.000Z
+
+### PATCH /habits/:id/toggle
+PATCH {{ server }}/habits/2fe73653-b5ef-4e4c-a1c7-2ac41e7f021e/toggle
+
+### GET /summary
+GET {{ server }}/summary
